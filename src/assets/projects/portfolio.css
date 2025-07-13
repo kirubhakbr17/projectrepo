@@ -39,6 +39,12 @@ body {font-family: Arial, Helvetica, sans-serif;
     font-size :27px;
     text-align:left;
     color:rgb(27, 27, 104);
+    animation-name: info;
+    animation-duration: 3s;
+}
+@keyframes info{
+  from{bottom: 0px;}
+  to{bottom:100px}
 }
 .polaroid {
   
@@ -48,7 +54,12 @@ body {font-family: Arial, Helvetica, sans-serif;
   position: absolute;
   right:80px;
   top:120px;
-  
+  animation-name:image;
+  animation-duration: 3s;
+}
+@keyframes image{
+from{right:0px}
+to{right:80px}
 }
 .imgsize{
   width:300px;
