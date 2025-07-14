@@ -1,21 +1,22 @@
 
 import './portfolio.css'
-import { BrowserRouter,Routes,Route,Link } from 'react-router-dom'
+import { BrowserRouter,Routes,Route,Link} from 'react-router-dom'
 import Skills from './skills'
 import Education from './Education'
 import Additional from './Additional'
 import Home from './Home'
 import Projects from './project'
 export default function Portfolio(){
-  return <body>
+ 
+ return <body>
     <div class="navbar">
 
 <BrowserRouter>
-<a><Link to='/'>home</Link></a>
-<a> <Link to='/skills'>skills</Link></a>
-<a><Link to='/education'>education</Link></a>
-<a><Link to='/additional'>additional</Link></a>
-<a><Link to='/projects'>projects</Link></a>
+<a ><Link className='selected' to='/'>home</Link></a>
+<a ><Link className='selected' to='/skills'>skills</Link></a>
+<a ><Link className='selected'   to='/education'>education</Link></a>
+<a ><Link className='selected' to='/additional'>additional</Link></a>
+<a ><Link className='selected' to='/projects'>projects</Link></a>
 <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/skills' element={<Skills/>}/>
@@ -25,6 +26,7 @@ export default function Portfolio(){
 </Routes>
 
 </BrowserRouter>
+
 </div>
 
 
