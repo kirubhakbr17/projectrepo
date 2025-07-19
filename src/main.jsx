@@ -10,7 +10,7 @@ import { createRoot} from 'react-dom/client'
 
 
 
-import Newcalc from './assets/projects/newcalc.jsx'
+
 import Calculator from './assets/projects/calculator/calculator.jsx'
 
 
