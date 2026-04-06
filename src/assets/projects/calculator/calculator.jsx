@@ -47,7 +47,7 @@ export default function Calculator(){
   <button onClick={()=>Appendtodisplay('0')}>0</button>
   <button onClick={()=>Appendtodisplay('.')}>.</button>
   <button className='operatorbtn' onClick={handleEqual}>=</button>
-  <button className='operatorbtn'onClick={handleClear} >AC</button>
+  <button id= 'acbtn' onClick={handleClear} >AC</button>
   
   </div>
    </div>
